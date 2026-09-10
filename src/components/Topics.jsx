@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import aiThumbnail from '../assets/ai-made-simple.jpg'
-import parentsThumbnail from '../assets/parents-listen.jpg'
+import parentsThumbnail from '../assets/parents-listen-up.jpg'
 
 const topics = [
   'Interview preparation',
