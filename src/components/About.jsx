@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import johnPhoto from '../assets/john-watters.jpg'
+import johnPhoto from '/john-watters.jpg'
 
 export default function About() {
   return (
