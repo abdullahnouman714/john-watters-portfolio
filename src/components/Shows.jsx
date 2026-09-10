@@ -8,7 +8,7 @@ const shows = [
       "Short, practical coaching videos — fixing up your LinkedIn profile, prepping for an interview, negotiating a promotion, or planning your next move. New episodes drop every week, built into a library anyone can search when they need it.",
     linkLabel: 'Browse the library',
     url: 'https://www.youtube.com/@CareerGuidancewithJohnWatters/videos',
-    thumbGradient: 'from-[#1B2C48] to-[#142137]',
+    image: '/parents-listen-up.jpg',
   },
   {
     tag: 'Monthly · Conversations',
@@ -17,7 +17,7 @@ const shows = [
       "Long-form interviews with people who've built genuinely interesting careers — across business, sport, tech, finance, and beyond. Real stories about resilience, mindset, and the decisions that moved things forward.",
     linkLabel: 'Listen to the podcast',
     url: 'https://www.youtube.com/@JWattersIC',
-    thumbGradient: 'from-[#4A3A1E] to-[#2E2410]',
+    image: '/ai-made-simple.jpg',
   },
 ]
 
@@ -55,10 +55,12 @@ export default function Shows() {
               whileHover={{ y: -6 }}
               className="bg-cream rounded border border-navy/10 overflow-hidden flex flex-col shadow-sm hover:shadow-lg transition-shadow duration-300"
             >
-              <div
-                className={`aspect-video bg-gradient-to-br ${show.thumbGradient} flex items-center justify-center text-cream/75 text-sm text-center p-4`}
-              >
-                <span>Add show artwork</span>
+              <div className="aspect-video relative overflow-hidden bg-navy">
+                <img
+                  src={show.image}
+                  alt={show.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
               </div>
               <div className="p-7">
                 <p className="text-sm font-semibold text-gold mb-2">{show.tag}</p>
@@ -70,7 +72,7 @@ export default function Shows() {
                   href={show.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-semibold text-navy border-b-[1.5px] border-gold pb-0.5 hover:text-gold transition-colors"
+                  className="font-semibold text-navy border-b-[1.5px] border-gold pb-0.5 hover:text-gold transition-colors inline-block"
                 >
                   {show.linkLabel} →
                 </a>
