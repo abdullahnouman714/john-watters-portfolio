@@ -1,6 +1,4 @@
 import { motion } from 'framer-motion'
-import aiThumbnail from '../assets/ai-made-simple.jpg'
-import parentsThumbnail from '../assets/parents-listen-up.jpg'
 
 const topics = [
   'Interview preparation',
@@ -18,14 +16,14 @@ const podcastEpisodes = [
   {
     title: "AI Made Simple",
     channel: "Inspiring Careers",
-    image: aiThumbnail,
+    image: "/ai-made-simple.jpg",
     url: "https://www.youtube.com/@JWattersIC",
     description: "Breaking down artificial intelligence and its impact on modern careers with expert insights."
   },
   {
     title: "Parents Listen Up",
     channel: "Career Guidance with John Watters",
-    image: parentsThumbnail,
+    image: "/parents-listen-up.jpg",
     url: "https://www.youtube.com/@CareerGuidancewithJohnWatters/videos",
     description: "Essential advice for parents guiding their children through career choices and professional development."
   }
